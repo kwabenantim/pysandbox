@@ -4,6 +4,8 @@
 
 #include <pybind11/pybind11.h>
 
+#include <boost/shared_ptr.hpp>
+
 namespace py = pybind11;
 
 void registerIdentifiable(py::module &m)
