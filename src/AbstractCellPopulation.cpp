@@ -8,5 +8,5 @@ AbstractCellPopulation<ELEMENT_DIM, SPACE_DIM>::AbstractCellPopulation(const std
   _size = indices.size();
 }
 
-template class AbstractCellPopulation<2>;
-template class AbstractCellPopulation<3>;
+template class AbstractCellPopulation<2, 2>;
+template class AbstractCellPopulation<3, 3>;
