@@ -13,7 +13,7 @@
 PYBIND11_DECLARE_HOLDER_TYPE(T, boost::shared_ptr<T>);
 
 #define PYBIND11_CVECTOR_TYPECASTER(T, N)                                                     \
-  namespace pybind11                                                                          \
+  namespace PYBIND11_NAMESPACE                                                                \
   {                                                                                           \
     namespace detail                                                                          \
     {                                                                                         \
@@ -39,7 +39,7 @@ PYBIND11_DECLARE_HOLDER_TYPE(T, boost::shared_ptr<T>);
             return false;                                                                     \
           }                                                                                   \
           value.resize(N);                                                                    \
-          for (int i = 0; i < N; i++)                                                         \
+          for (int i = 0; i < N; ++i)                                                         \
           {                                                                                   \
             value[i] = buf.data()[i];                                                         \
           }                                                                                   \
