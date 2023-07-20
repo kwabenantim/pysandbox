@@ -23,6 +23,7 @@ void registerConcreteCellPopulation(py::module &m)
 
   py::class_<ConcreteCellPopulation<DIM>,
              boost::shared_ptr<ConcreteCellPopulation<DIM>>,
+             PyConcreteCellPopulation<DIM>,
              AbstractCellPopulation<DIM, DIM>>(m, name.c_str())
       .def(py::init<const std::vector<unsigned>>(),
            py::arg("indices"))
