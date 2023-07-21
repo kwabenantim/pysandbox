@@ -1,8 +1,3 @@
-#include "AbstractCellPopulation.hpp"
-#include "AbstractCellPopulationBoundaryCondition.hpp"
-#include "ConcreteCellPopulation.hpp"
-#include "ConcreteCellPopulationBoundaryCondition.hpp"
-#include "Identifiable.hpp"
 #include "PyAbstractCellPopulation.hpp"
 #include "PyAbstractCellPopulationBoundaryCondition.hpp"
 #include "PyConcreteCellPopulation.hpp"
