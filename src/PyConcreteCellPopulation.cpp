@@ -17,7 +17,7 @@ std::string PyConcreteCellPopulation<DIM>::ToString() const
 }
 
 template <unsigned DIM>
-void registerConcreteCellPopulation(py::module &m)
+void bind_ConcreteCellPopulation(py::module &m)
 {
   const std::string name{"ConcreteCellPopulation_" + std::to_string(DIM)};
 
@@ -33,5 +33,5 @@ void registerConcreteCellPopulation(py::module &m)
 template class PyConcreteCellPopulation<2>;
 template class PyConcreteCellPopulation<3>;
 
-template void registerConcreteCellPopulation<2>(py::module &m);
-template void registerConcreteCellPopulation<3>(py::module &m);
+template void bind_ConcreteCellPopulation<2>(py::module &m);
+template void bind_ConcreteCellPopulation<3>(py::module &m);

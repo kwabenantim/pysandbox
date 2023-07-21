@@ -12,6 +12,6 @@ public:
   using Identifiable::Identifiable;
 };
 
-void registerIdentifiable(pybind11::module &m);
+void bind_Identifiable(pybind11::module &m);
 
 #endif //_PY_IDENTIFIABLE_HPP_

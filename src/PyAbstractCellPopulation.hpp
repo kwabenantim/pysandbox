@@ -22,6 +22,6 @@ public:
 };
 
 template <unsigned ELEMENT_DIM, unsigned SPACE_DIM = ELEMENT_DIM>
-void registerAbstractCellPopulation(pybind11::module &m);
+void bind_AbstractCellPopulation(pybind11::module &m);
 
 #endif //_PY_ABSTRACT_CELL_POPULATION_HPP_

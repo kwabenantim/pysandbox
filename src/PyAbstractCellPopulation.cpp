@@ -18,7 +18,7 @@ std::string PyAbstractCellPopulation<ELEMENT_DIM, SPACE_DIM>::ToString() const
 }
 
 template <unsigned ELEMENT_DIM, unsigned SPACE_DIM>
-void registerAbstractCellPopulation(py::module &m)
+void bind_AbstractCellPopulation(py::module &m)
 {
   const std::string name{"AbstractCellPopulation_" +
                          std::to_string(ELEMENT_DIM) + "_" +
@@ -36,5 +36,5 @@ void registerAbstractCellPopulation(py::module &m)
 template class PyAbstractCellPopulation<2, 2>;
 template class PyAbstractCellPopulation<3, 3>;
 
-template void registerAbstractCellPopulation<2, 2>(py::module &m);
-template void registerAbstractCellPopulation<3, 3>(py::module &m);
+template void bind_AbstractCellPopulation<2, 2>(py::module &m);
+template void bind_AbstractCellPopulation<3, 3>(py::module &m);

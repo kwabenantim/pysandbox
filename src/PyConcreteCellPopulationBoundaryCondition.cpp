@@ -19,7 +19,7 @@ std::string PyConcreteCellPopulationBoundaryCondition<ELEMENT_DIM, SPACE_DIM>::T
 }
 
 template <unsigned ELEMENT_DIM, unsigned SPACE_DIM>
-void registerConcreteCellPopulationBoundaryCondition(py::module &m)
+void bind_ConcreteCellPopulationBoundaryCondition(py::module &m)
 {
   const std::string name{"ConcreteCellPopulationBoundaryCondition_" +
                          std::to_string(ELEMENT_DIM) + "_" +
@@ -41,5 +41,5 @@ void registerConcreteCellPopulationBoundaryCondition(py::module &m)
 template class PyConcreteCellPopulationBoundaryCondition<2, 2>;
 template class PyConcreteCellPopulationBoundaryCondition<3, 3>;
 
-template void registerConcreteCellPopulationBoundaryCondition<2, 2>(py::module &m);
-template void registerConcreteCellPopulationBoundaryCondition<3, 3>(py::module &m);
+template void bind_ConcreteCellPopulationBoundaryCondition<2, 2>(py::module &m);
+template void bind_ConcreteCellPopulationBoundaryCondition<3, 3>(py::module &m);

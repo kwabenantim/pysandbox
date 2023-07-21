@@ -22,6 +22,6 @@ public:
 };
 
 template <unsigned DIM>
-void registerConcreteCellPopulation(pybind11::module &m);
+void bind_ConcreteCellPopulation(pybind11::module &m);
 
 #endif //_PY_CONCRETE_CELL_POPULATION_HPP_

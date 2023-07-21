@@ -8,7 +8,7 @@
 
 namespace py = pybind11;
 
-void registerIdentifiable(py::module &m)
+void bind_Identifiable(py::module &m)
 {
   py::class_<Identifiable,
              boost::shared_ptr<Identifiable>,

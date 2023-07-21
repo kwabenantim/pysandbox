@@ -22,6 +22,6 @@ public:
 };
 
 template <unsigned ELEMENT_DIM, unsigned SPACE_DIM = ELEMENT_DIM>
-void registerConcreteCellPopulationBoundaryCondition(pybind11::module &m);
+void bind_ConcreteCellPopulationBoundaryCondition(pybind11::module &m);
 
 #endif //_PY_CONCRETE_CELL_POPULATION_BOUNDARY_CONDITION_HPP_

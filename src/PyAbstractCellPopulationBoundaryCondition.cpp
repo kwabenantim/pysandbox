@@ -18,7 +18,7 @@ std::string PyAbstractCellPopulationBoundaryCondition<ELEMENT_DIM, SPACE_DIM>::T
 }
 
 template <unsigned ELEMENT_DIM, unsigned SPACE_DIM>
-void registerAbstractCellPopulationBoundaryCondition(py::module &m)
+void bind_AbstractCellPopulationBoundaryCondition(py::module &m)
 {
   const std::string name{"AbstractCellPopulationBoundaryCondition_" +
                          std::to_string(ELEMENT_DIM) + "_" +
@@ -36,5 +36,5 @@ void registerAbstractCellPopulationBoundaryCondition(py::module &m)
 template class PyAbstractCellPopulationBoundaryCondition<2, 2>;
 template class PyAbstractCellPopulationBoundaryCondition<3, 3>;
 
-template void registerAbstractCellPopulationBoundaryCondition<2, 2>(py::module &m);
-template void registerAbstractCellPopulationBoundaryCondition<3, 3>(py::module &m);
+template void bind_AbstractCellPopulationBoundaryCondition<2, 2>(py::module &m);
+template void bind_AbstractCellPopulationBoundaryCondition<3, 3>(py::module &m);
